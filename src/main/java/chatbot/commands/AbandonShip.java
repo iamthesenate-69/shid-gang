@@ -16,7 +16,7 @@ import net.dv8tion.jda.api.utils.AttachmentOption;
 
 public class AbandonShip extends Commands {
 	
-	String path = "C:\\Users\\ems24\\Desktop\\music\\timetoabandonship.mp3";
+	String path = "C:\\timetoabandonship.mp3";
 
 	@Override
 	public String name() {
@@ -42,7 +42,7 @@ public class AbandonShip extends Commands {
 	public void execute(MessageReceivedEvent event, String[] args) {
 		Stop(event);
 		Play(event);
-		event.getChannel().sendFile(new File(".\\timetoabandonship.mp3"), "ship.mp3").queue();
+		event.getChannel().sendFile(new File(path), "ship.mp3").queue();
 	}
 
 	public static class DisconnectUsers extends TimerTask {
