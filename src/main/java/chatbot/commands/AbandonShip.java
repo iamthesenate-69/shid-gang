@@ -16,7 +16,7 @@ import net.dv8tion.jda.api.utils.AttachmentOption;
 
 public class AbandonShip extends Commands {
 	
-	String path = "C:\\timetoabandonship.mp3";
+	String path = ".\\timetoabandonship.mp3";
 
 	@Override
 	public String name() {
